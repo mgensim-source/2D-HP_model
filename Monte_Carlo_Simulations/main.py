@@ -6,16 +6,14 @@ from utils import Protein
 from plots import plot_protein, plot_energy_evolution, plot_compactness_evolution, create_fold_gif
 from simulations import run_monte_carlo_multistart
 
-
-
-def load_config(path):
+def load_config(path):    
     with open(path, "r") as f:
-        return yaml.safe_load(f)
+        return yaml.safe_load(f)     
 
 def main(config_path=None):
     project_root = os.path.dirname(os.path.abspath(__file__))
     print("=======", project_root)
-
+   
     if config_path is None:
         config_path = os.path.join(project_root, "config.yaml")
 
@@ -32,7 +30,7 @@ def main(config_path=None):
     os.makedirs(output_dir, exist_ok=True)
 
     protein = Protein(sequence, initial_coords)
-    plot_protein(
+    plot_protein( 
         sequence, protein.coords, protein.energy,
         title_prefix="Initial fold",
         save_path=os.path.join(output_dir, "initial.png"),
@@ -59,8 +57,8 @@ def main(config_path=None):
     )
 
     if (config.get("plot", {}) or {}).get("create_gif", False):
-        create_fold_gif(
-            sequence, result["fold_history"],
+        create_fold_gif( 
+            sequence, result["fold_history"], 
             save_path=os.path.join(output_dir, "evolution.gif"),
         )
 
