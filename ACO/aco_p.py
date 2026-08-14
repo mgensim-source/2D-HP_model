@@ -197,10 +197,6 @@ def aco_hp(
                 ):
                     best_solution = solution
 
-        # --------------------------------
-        # Evaporation
-        # --------------------------------
-
         evaporate_pheromone(
             pheromone,
             rho
