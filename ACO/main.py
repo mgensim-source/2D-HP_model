@@ -5,7 +5,7 @@ sequence = "HPHPPHHPHPPHPHHPPHPH"
 best = aco_hp(
     sequence,
     num_ants=50, #now many attempts of folding you want to make in one attempt (in parallel)
-    iterations=500
+    iterations=500 
 )
 
 print("\nBest energy:", best["energy"])
