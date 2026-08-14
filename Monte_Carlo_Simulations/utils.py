@@ -12,14 +12,14 @@ def calculate_compactness(coords):
     box_area = width * height
 
     if box_area == 0:
-        return 0.0
+        return 0.0 
 
     return len(coords) / box_area
 
 def calculate_energy(sequence, coords):
     """
     E(fold) = -(number of unique, non-consecutive H-H lattice contacts).
-    Lower (more negative) is more stable.
+    Lower (more negative) is more stable. 
     """
     occupied = {pos: i for i, pos in enumerate(coords)}
 
