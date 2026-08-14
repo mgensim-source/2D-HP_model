@@ -49,7 +49,7 @@ def metropolis_accept(delta_energy, temperature):
     Metropolis criterion: accept a move if it lowers energy, or with
     probability exp(-delta_energy / temperature) if it raises energy.
     """
-    if delta_energy < 0:
+    if delta_energy < 0: 
         return True
 
     acceptance_prob = math.exp(-delta_energy / temperature)
