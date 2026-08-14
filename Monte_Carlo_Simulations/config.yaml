@@ -1,0 +1,20 @@
+sequence: HPHPPHHPHPPHPHHPPHPH
+
+# the protein starts as a straight chain if not specified
+structure:
+  use_structure: false
+  coordinates: []   
+
+# Monte Carlo / simulated annealing configuration
+simulation:
+  num_runs: 20        
+  folding_steps: 20000
+  annealing: true
+  temperature: 8.0
+
+# Plot configuration
+plot:
+  create_gif: true
+
+# Seed for reproducibility (set to null for random)
+seed: 42
