@@ -2,7 +2,7 @@ import matplotlib
 matplotlib.use("Agg")  # headless-safe backend for saving files without a display
 import matplotlib.pyplot as plt
 from matplotlib import animation
-
+ 
 
 def plot_protein(sequence, coords, energy, title_prefix="2D HP Folding", save_path=None):
     x = [p[0] for p in coords]
