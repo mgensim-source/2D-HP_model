@@ -8,7 +8,7 @@ DIRECTIONS = {
 }
 def get_valid_moves(current, occupied):
     x, y = current
-
+      
     valid = []
 
     for direction, (dx, dy) in DIRECTIONS.items():
@@ -30,10 +30,10 @@ def calculate_energy(sequence, coords):
             continue
 
         x, y = coords[i]
-
+ 
         neighbors = [
             (x + 1, y),
-            (x - 1, y),
+            (x - 1, y), 
             (x, y + 1),
             (x, y - 1)
         ]
