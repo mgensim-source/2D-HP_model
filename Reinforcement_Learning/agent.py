@@ -2,7 +2,7 @@ import random
 
 import torch.nn as nn
 import torch
-import numpy as np
+import numpy as np 
 import torch.optim as optim 
 
 class PositionalEncoding(nn.Module):
