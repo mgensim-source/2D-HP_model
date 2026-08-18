@@ -1,4 +1,4 @@
-# Reinforcement Learning: Basic Cycle, Q-Learning, and Protein Folding
+# Reinforcement Learning, Q-Learning
 
 ## Basic Cycle in Reinforcement Learning
 
