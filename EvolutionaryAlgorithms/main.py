@@ -4,7 +4,7 @@ of *topological* (non-consecutive) H-H contacts -- a proxy for the
 hydrophobic core packing that drives real protein folding.
 
 This script folds a given HP sequence on the 3D simple-cubic lattice
-using a genetic algorithm (GA).
+using a genetic algorithm (GA). 
 
 Encoding
 --------
